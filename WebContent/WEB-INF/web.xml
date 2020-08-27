@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns="http://java.sun.com/xml/ns/javaee"
+	xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd"
+	id="WebApp_ID" version="3.0">
+	<display-name>SmartClinicOEP</display-name>
+	<welcome-file-list>
+
+
+		<welcome-file>home.jsp</welcome-file>
+	</welcome-file-list>
+	<servlet>
+		<servlet-name>storeData</servlet-name>
+		<servlet-class>storeData</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>storeData</servlet-name>
+		<url-pattern>/storeData</url-pattern>
+	</servlet-mapping>
+
+
+
+	<servlet>
+		<servlet-name>authenticate</servlet-name>
+		<servlet-class>authenticate</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>authenticate</servlet-name>
+		<url-pattern>/authenticate</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>storeAPP</servlet-name>
+		<servlet-class>storeAPP</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>storeAPP</servlet-name>
+		<url-pattern>/storeAPP</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>storePrescription</servlet-name>
+		<servlet-class>storePrescription</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>storePrescription</servlet-name>
+		<url-pattern>/storePrescription</url-pattern>
+	</servlet-mapping>
+</web-app>
