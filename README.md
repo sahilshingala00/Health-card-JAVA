@@ -1,1 +1,1 @@
-# Health-card-JAVA
+# Smart Clinic JAVA
